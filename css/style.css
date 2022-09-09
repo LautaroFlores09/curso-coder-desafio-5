@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family:Rotunda ;
+    src: url("../assets/ttf/Fontspring-DEMO-4a-rotunda-regular.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rotunda;
+    src: url("../assets/ttf/Fontspring-DEMO-3a-rotunda-light.otf");
+    font-style: light;
+}
+@font-face {
+    font-family: Rotunda1;
+    src: url("../assets/ttf/Fontspring-DEMO-6a-rotunda-bold.otf");
+    font-style: bold;
+}
+@font-face {
+    font-family: Draco;
+    src: url("../assets/ttf/Draco.otf");
+    font-style: normal;
+}
+
+ul{
+    list-style-type: none;
+}
+select{
+    border: none;
+}
+
+
+.header{
+    border-bottom: 2px solid #8400cd;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+ .header__boton{
+    display: none;
+ }
+
+
+
+
+
+/***NAVBAR ***/
+/* LOGO */
+.header__logo{
+    padding: 5px;
+    margin-left: 50px;
+}
+.header__logo-img{
+    margin-left: 30px;
+}
+.header__logo-nombre{
+    color: #8400cd;
+    font-family: Draco;
+    font-size: 9px;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+.menu{
+   display: flex;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 200px;
+}
+.header__menu{
+    display: flex;
+    list-style-type: none;
+}
+.header__menu-item{
+    margin: 0 5px 0 5px;
+    font-family: Rotunda;
+    font-size: 16px;   
+}
+.header__menu-item a{
+    color: white;
+    text-decoration: none; 
+}
+.header__menu-item a:hover{
+    color: #8400cd;
+}
+.header__menu-item.active{
+    text-decoration: underline;
+}
+
+
+
+
+
+/***INICIO ***/
+/* VIDEO */
+.video__inframe{
+    width: 100%;
+    height: 800px;
+    border-bottom: 2px solid #8400cd;
+}
+ 
+/* IMAGENES */
+.imagenesinicio{
+    background-color: black;
+}
+.imgs{
+    height: 290px;
+    width: 300px;
+    transition:0.3s;
+}
+.imgs:hover {
+    transform: scale(1.1);
+    box-shadow: #8400cd 0px 20px 30px -10px;
+}
+
+ /* PESTAÑA NOVEDADES */
+
+ /* Titulos */
+.titulo{
+    padding: 50px;
+    border-bottom: 2px solid #8400cd;
+    background-image: url("../assets/fondo.png");
+    background-color: transparent;
+}
+.titulos__tituloprincipal{
+    color: white;
+    text-align: center;
+    font-family: draco;
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin-left: 550px;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.titulo__subtitulo1{
+    color: white;
+    text-align: center;
+    font-family: Rotunda;
+    font-size: 25px;
+    margin-left: 550px;
+    background-color: transparent;
+}
+.titulo__subtitulo2{
+    color: white;
+    text-align: center;
+    font-family: Rotunda;
+    font-size: 25px;
+    margin-left: 550px;
+    background-color: transparent;
+}
