@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Novedades</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -36,19 +37,19 @@
 
             <section class="marcas">
                 <!-- Mejores marcas -->
-                <h1 class="marcas__titulo">CONTAMOS CON LAS MEJORES MARCAS</h1>
+                <h1 class=" marcas__titulo p-5 mb-4 text-decoration-underline text-center">CONTAMOS CON LAS MEJORES MARCAS</h1>
                 <div class="marcas__imagenes">
-                    <img class="marca__imagen" src="../assets/redragon.png" alt="redragon" />
-                    <img class="marca__imagen" src="../assets/corsair.png" alt="corsair" />
-                    <img class="marca__imagen" src="../assets/logitech.png" alt="logitech" />
-                    <img class="marca__imagen" src="../assets/amd.png" alt="amd">
-                    <img class="marca__imagen" src="../assets/asus.png" alt="asus" />
+                        <img class="marca__imagen rounded " src="../assets/redragon.png" alt="redragon" />
+                        <img class="marca__imagen rounded " src="../assets/corsair.png" alt="corsair" />
+                        <img class="marca__imagen rounded " src="../assets/logitech.png" alt="logitech" />
+                        <img class="marca__imagen rounded " src="../assets/amd.png" alt="amd">
+ 
                 </div>
             </section>   
 
-            <section class="ofertaspc">
+            <section class="ofertaspc row mw-100 justify-content-evenly">
                 <!-- PC GAMER -->
-                <div class="ofertaspc__ofertas">
+                <div class="ofertaspc__ofertas col-sm-6 d-flex flex-column justify-content-center align-items-center text-center" style="width: 400px" >
                      <img class="ofertaspc__ofertas-imagen" src="../assets/pc gamer.jpg" alt="pc gamer" width="500" />
                         <ul class="ofertaspc__ofertas-lista"> 
                             <li class="ofertaspc__ofertas-titulo">OFERTA 1 INTEL</li>
@@ -62,7 +63,7 @@
                             <li class="componentes">Procesador: Intel Celeron</li>
                         </ul>
                 </div>
-                <div class="ofertaspc__ofertas">
+                <div class="ofertaspc__ofertas d-flex flex-column justify-content-center align-items-center text-center" style="width: 400px">
                 <a href="../pages/tienda.html"> <img class="ofertaspc__ofertas-imagen" src="../assets/pc gamer 2.jpg" alt="pc gamer 2" width="500"></a>
                 <ul class="ofertaspc__ofertas-lista">
                     <li class="ofertaspc__ofertas-titulo">OFERTA 2 AMD</li>
@@ -78,37 +79,50 @@
             </div>
             </section>     
         </main>
-        <!-- Inicio de footer -->
-        <footer class="footer">
-            <div class="footer__footerperifericwar">
-                <h2 class="footer__footerperifericwar-titulo">PERIFERICWAR</h2>
-                <ul class="footer__footerperifericwar-lista">
-                    <li class="footer__footerperifericwar-lista-item"><a href="../index.html">Inicio</a></li>
-                    <li class="footer__footerperifericwar-lista-item"><a href="../pages/tienda.html">Tienda</a></li>
-                </ul>
-                <h3 class="footer__footerperifericwar-copy">Copyright © PerifericWar.com.ar 2022</h3>
+     <!-- FOOTER -->
+     <footer class=" ">
+        <div class="row d-flex justify-content-center  p-5  mw-100 footer">
+            <div class="col-lg-4 col-xl-4 mw-100 mb-4 ">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1 class=" mb-3 titulo__footer">PERIFERICWAR</h1>
+                    <div class="mb-3">
+                        <a class="text-decoration-none itempw" href="./index.htm">Inicio</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="text-decoration-none itempw" href="">Tienda</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-4 col-xl-4 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="mb-3 titulo__footer">CONTACTO y SOPORTE </h3>
+                    <div class="d-flex  mb-2 ">
+                        <img class="" src="../assets/telefono.png" alt="Telefono"  height="30" />
+                        <p class="text-white">113355667</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="" href="../pages/contacto.html"><img  src="../assets/sobrecito.png" alt="Sobre" height="30" id="pages"/></a>
+                        <p class="text-white">Contacto</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="" href="./pages/nosotros.html"> <img class="cys__nosotros" src="../assets/nosotros.png" alt="Nosotros"  height="30"></a>
+                        <p class="text-white">Nosotros</p>
+                    </div>
+                </div>    
+
+            </div>
+            <div class="col-lg-4 col-xl-4 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                    <h3 class=" mb-3 titulo__footer ">SEGUINOS EN:</h3>
+                    <div class="d-flex">
+                    <img class="footer__seguinos-item" src="../assets/Redes sociales.png" alt="Redes sociales"  height="50"> 
+                    </div>
+                </div>
             </div>
 
-            <div class="footer__cys">
-                    <h2 class="footer__cys-titulo">CONTACTO Y SOPORTE</h2>
-                <div class="footer__cys-telefono">
-                        <img class="footer__cys-telefono-item" src="../assets/telefono.png" alt="Telefono"  height="30" />
-                            <h3 class="footer__cys-telefono-numero">1133556677</h3>
-                </div>
-                <div class="footer__cys-contacto">
-                    <a class="footer__cys-contacto-item" href="../pages/contacto.html"><img  src="../assets/sobrecito.png" alt="Sobre" height="50" id="pages"/></a>
-                        <h3 class="footer__cys-contacto-titulo">Contacto</h3>
-                </div>
-                <div class="footer__cys-nosotros">
-                    <a class="footer__cys-nosotros-item" href="../pages/nosotros.html"> <img class="cys__nosotros" src="../assets/nosotros.png" alt="Nosotros"  height="30"></a>
-                        <h3 class="footer__cys-nosotros-titulo">Nosotros</h3>
-                </div>
-            </div>
-            
-            <div class="footer__seguinos">
-                <h2 class="footer__seguinos-titulo">SEGUINOS EN :</h2>
-                    <img class="footer__seguinos-item" src="../assets/Redes sociales.png" alt="Redes sociales"  height="50">
-            </div>
-        </footer> 
+        </div>
+     </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     </body>
 </html>
