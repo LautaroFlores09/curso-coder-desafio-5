@@ -218,3 +218,23 @@ select{
 .componentes{
     margin-bottom: 27px;
 }
+
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    margin: 0;
+}
+.titulo__footer{
+    font-family: draco;
+    font-size: 10px;
+    color: #8400cd;
+}
+.itempw{
+    font-family: rotunda;
+    color: white;
+    font-size: 17px;
+}
+.itempw:hover{
+    color: #8400cd;
+}
