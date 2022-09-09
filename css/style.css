@@ -238,3 +238,96 @@ select{
 .itempw:hover{
     color: #8400cd;
 }
+
+
+@media(max-width:1820px){
+    .video__inframe{
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+        background-color: black;
+    }
+}
+
+@media(max-width:1450px){
+    .titulo{
+        margin: 0;
+        padding: 60px;
+        border-bottom: 2px solid #8400cd;
+        background-image: url("../assets/backgoundd.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .titulo__subtitulo1,
+    .titulos__tituloprincipal,
+    .titulo__subtitulo2{
+        margin: 0;
+    }
+
+}
+@media(max-width:1200px){
+    .titulo__subtitulo1,
+    .titulos__tituloprincipal,
+    .titulo__subtitulo2{
+       font-size: 16px;
+       letter-spacing: 2px;
+    }
+}
+@media(max-width:1050px){
+    .marcas__imagenes{
+        display: grid;
+        grid-template-columns: repeat(2,auto )
+    }
+}
+@media(max-width:925px){
+    .video__inframe{
+        display: flex;
+        justify-content: center;
+        padding: auto;
+        background-color: black;
+    }
+
+}
+
+@media (max-width:900px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+    }
+    .header__logo{
+        padding: auto;
+        margin: auto;
+    }
+    .menu{
+        margin: 20px 0 50px 0;
+    }
+}
+@media screen and (max-width:540px) {
+    .titulo__footer3{
+        color: #8400cd;
+    }
+    .marcas__imagenes{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1,auto )
+    }
+}
+@media(max-width:470px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+    .header__logo{
+        margin: 0 0 0 30px;
+    }
+    .menu{
+        display: none;
+    }
+    .header__boton{
+        display: inline;
+        margin: 20px;
+    }
+}
